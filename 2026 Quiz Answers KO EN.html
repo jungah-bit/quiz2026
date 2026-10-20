@@ -1,0 +1,624 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0b1524" media="(prefers-color-scheme: dark)">
+<title>2026 글로벌제조혁신세미나 퀴즈 정답</title>
+<style>
+:root{
+  --paper:#ffffff;
+  --ink:#0f1e33;
+  --ink-2:#3b495c;
+  --muted:#667386;
+  --line:#e3e8ef;
+  --line-2:#c6cfdb;
+  --track:#edf1f6;
+  --tint:#eef4fa;
+  --accent:#002c5f;
+  --accent-text:#002c5f;
+  --on-accent:#ffffff;
+  --bar:rgba(255,255,255,.95);
+  --lift:0 1px 2px rgba(15,30,51,.06),0 6px 16px rgba(15,30,51,.1);
+  --bar-h:64px;
+}
+@media screen and (prefers-color-scheme:dark){
+  :root{
+    --paper:#0b1524;
+    --ink:#e8eef6;
+    --ink-2:#c3cdda;
+    --muted:#8d9aad;
+    --line:#1d2b40;
+    --line-2:#34465e;
+    --track:#14223a;
+    --tint:#11213a;
+    --accent:#00aad2;
+    --accent-text:#3fc0e4;
+    --on-accent:#04192b;
+    --bar:rgba(11,21,36,.94);
+    --lift:0 1px 2px rgba(0,0,0,.4),0 8px 20px rgba(0,0,0,.4);
+  }
+}
+*,*::before,*::after{box-sizing:border-box}
+[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"Pretendard",-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR","Noto Sans CJK KR","Malgun Gothic","맑은 고딕","Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  font-size:16px;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+#panel-ko{word-break:keep-all;overflow-wrap:break-word}
+#panel-en{overflow-wrap:break-word}
+
+/* language tabs: two radio buttons switch the panels with CSS alone,
+   so switching still works in previewers that block scripts */
+.lang-input{
+  position:fixed;top:0;left:0;width:1px;height:1px;margin:0;padding:0;border:0;
+  opacity:0;overflow:hidden;clip-path:inset(50%);
+}
+#lang-ko:checked ~ main #panel-en,
+#lang-en:checked ~ main #panel-ko{display:none}
+.bar{
+  position:sticky;top:0;z-index:10;
+  padding:calc(8px + env(safe-area-inset-top)) max(16px,env(safe-area-inset-right)) 8px max(16px,env(safe-area-inset-left));
+  background:var(--bar);
+  -webkit-backdrop-filter:saturate(180%) blur(16px);
+  backdrop-filter:saturate(180%) blur(16px);
+  border-bottom:1px solid var(--line);
+  transition:border-color .2s ease;
+}
+.js .bar:not([data-scrolled]){border-bottom-color:transparent}
+.tabs{
+  position:relative;display:grid;grid-template-columns:1fr 1fr;
+  max-width:640px;margin:0 auto;padding:4px;
+  background:var(--track);border-radius:12px;
+}
+.thumb{
+  position:absolute;top:4px;bottom:4px;left:4px;width:calc(50% - 4px);
+  background:var(--accent);border-radius:9px;
+  transition:transform .24s cubic-bezier(.2,.8,.3,1);
+}
+#lang-en:checked ~ .bar .thumb{transform:translateX(100%)}
+.tab{
+  position:relative;z-index:1;
+  display:grid;place-items:center;height:40px;border-radius:9px;cursor:pointer;
+  font-size:15px;font-weight:700;letter-spacing:-.01em;color:var(--ink-2);
+  -webkit-user-select:none;user-select:none;
+  -webkit-tap-highlight-color:transparent;
+  transition:color .2s ease;
+}
+#lang-ko:checked ~ .bar .tab-ko,
+#lang-en:checked ~ .bar .tab-en{color:var(--on-accent)}
+#lang-ko:focus-visible ~ .bar .tab-ko,
+#lang-en:focus-visible ~ .bar .tab-en{outline:2px solid var(--accent);outline-offset:3px}
+
+/* page */
+main{
+  max-width:640px;margin:0 auto;
+  padding:0 max(20px,env(safe-area-inset-right)) calc(72px + env(safe-area-inset-bottom)) max(20px,env(safe-area-inset-left));
+}
+h1{
+  margin:24px 0 0;
+  font-size:clamp(23px,6.4vw,32px);
+  line-height:1.3;
+  font-weight:800;
+  letter-spacing:-.025em;
+}
+#panel-en h1{letter-spacing:-.02em}
+
+/* answers at a glance */
+.glance{margin:24px 0 28px}
+.glance h2{margin:0 0 10px;font-size:14px;font-weight:700;color:var(--muted)}
+.glance ol{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px}
+.glance a{
+  display:flex;flex-direction:column;align-items:center;gap:7px;
+  padding:10px 0 12px;border:1px solid var(--line);border-radius:12px;
+  color:var(--muted);text-decoration:none;font-size:13px;font-weight:700;line-height:1;
+  font-variant-numeric:tabular-nums;
+  -webkit-tap-highlight-color:transparent;
+}
+.glance a:active{background:var(--track)}
+.glance a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+/* option numbers 1-4 drawn as circles; filled = the correct answer */
+.b{
+  flex:none;display:inline-grid;place-items:center;
+  width:26px;height:26px;border-radius:50%;
+  border:1.5px solid var(--line-2);
+  font-size:14px;font-weight:700;line-height:1;color:var(--ink-2);
+  font-variant-numeric:tabular-nums;
+}
+.b.on{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+
+/* question */
+.q{padding:28px 0 32px;border-top:1px solid var(--line);scroll-margin-top:calc(var(--bar-h) + 8px)}
+.q h2{margin:0}
+.qn{display:block;margin-bottom:8px;font-size:15px;font-weight:800;color:var(--accent-text);font-variant-numeric:tabular-nums;letter-spacing:.01em}
+.qt{display:block;font-size:18px;line-height:1.55;font-weight:700;letter-spacing:-.015em}
+.opts{list-style:none;margin:16px 0 0;padding:0}
+.opts li{
+  display:grid;grid-template-columns:26px minmax(0,1fr);column-gap:12px;align-items:start;
+  padding:7px 0;font-size:16px;line-height:24px;color:var(--ink-2);
+}
+.opts li .b{margin-top:-1px}
+.opts li.on{color:var(--ink);font-weight:700}
+.key{margin-top:16px;padding:16px 16px 17px;background:var(--tint);border-radius:14px}
+.key p{margin:0}
+.ans{font-size:16px;line-height:26px;font-weight:700}
+.ans .b{width:24px;height:24px;margin-right:8px;font-size:13px}
+.lbl{margin-right:8px;font-size:14px;font-weight:800;color:var(--accent-text)}
+.key .exp{margin-top:12px;font-size:15.5px;line-height:1.72;color:var(--ink-2)}
+
+/* back to top */
+.top{
+  position:fixed;z-index:9;
+  right:max(16px,env(safe-area-inset-right));bottom:calc(16px + env(safe-area-inset-bottom));
+  width:44px;height:44px;border-radius:50%;
+  display:grid;place-items:center;
+  border:1px solid var(--line);background:var(--paper);color:var(--ink);
+  box-shadow:var(--lift);text-decoration:none;
+  transition:opacity .2s ease,transform .2s ease;
+  -webkit-tap-highlight-color:transparent;
+}
+.js .top:not([data-show]){opacity:0;visibility:hidden;transform:translateY(8px);transition:opacity .2s ease,transform .2s ease,visibility 0s linear .2s}
+.top:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.top svg{width:20px;height:20px}
+
+.sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important}}
+@media print{
+  .bar,.top{display:none}
+  .q{break-inside:avoid}
+}
+</style>
+<script>document.documentElement.className+=' js'</script>
+</head>
+<body>
+
+<input class="lang-input" type="radio" name="lang" id="lang-ko" value="ko" checked>
+<input class="lang-input" type="radio" name="lang" id="lang-en" value="en">
+
+<header class="bar">
+  <div class="tabs">
+    <span class="thumb" aria-hidden="true"></span>
+    <label class="tab tab-ko" for="lang-ko" lang="ko">한글</label>
+    <label class="tab tab-en" for="lang-en" lang="en">English</label>
+  </div>
+</header>
+
+<main>
+
+<section id="panel-ko" lang="ko">
+  <h1>2026 글로벌제조혁신세미나 퀴즈 정답</h1>
+
+  <nav class="glance" aria-labelledby="glance-ko">
+    <h2 id="glance-ko">정답 한눈에 보기</h2>
+    <ol>
+      <li><a href="#ko-q1">Q1<span class="b on">2</span></a></li>
+      <li><a href="#ko-q2">Q2<span class="b on">1</span></a></li>
+      <li><a href="#ko-q3">Q3<span class="b on">2</span></a></li>
+      <li><a href="#ko-q4">Q4<span class="b on">1</span></a></li>
+      <li><a href="#ko-q5">Q5<span class="b on">2</span></a></li>
+      <li><a href="#ko-q6">Q6<span class="b on">3</span></a></li>
+      <li><a href="#ko-q7">Q7<span class="b on">1</span></a></li>
+      <li><a href="#ko-q8">Q8<span class="b on">3</span></a></li>
+      <li><a href="#ko-q9">Q9<span class="b on">2</span></a></li>
+      <li><a href="#ko-q10">Q10<span class="b on">1</span></a></li>
+    </ol>
+  </nav>
+
+  <article class="q" id="ko-q1" data-q="1">
+    <h2><span class="qn">Q1</span><span class="qt">울산 EV 공장이 추구하는 3가지 제조혁신 콘셉트로 제시된 것은?</span></h2>
+    <ol class="opts">
+      <li><span class="b">1</span><span>Speed, Safety, Smart</span></li>
+      <li class="on"><span class="b on">2</span><span>Human, Space, Data<span class="sr"> (정답)</span></span></li>
+      <li><span class="b">3</span><span>Green, Clean, Lean</span></li>
+      <li><span class="b">4</span><span>People, Process, Technology</span></li>
+    </ol>
+    <div class="key">
+      <p class="ans"><span class="lbl">정답</span><span class="b on">2</span><span>Human, Space, Data</span></p>
+      <p class="exp"><span class="lbl">풀이</span>"사람이 중심에 있는(Human)·자연과 공존하는(Space)·데이터로 연결된(Data)" 공장을 3대 콘셉트로 제시하였다.</p>
+    </div>
+  </article>
+
+  <article class="q" id="ko-q2" data-q="2">
+    <h2><span class="qn">Q2</span><span class="qt">울산 EV 공장과 E-FOREST 센터가 협업하여 구현한, SDF 라운지의 AI 기반 공장운영 시스템은?</span></h2>
+    <ol class="opts">
+      <li class="on"><span class="b on">1</span><span>AI-Agent<span class="sr"> (정답)</span></span></li>
+      <li><span class="b">2</span><span>Smart Co-Pilot</span></li>
+      <li><span class="b">3</span><span>Digital Twin</span></li>
+      <li><span class="b">4</span><span>RPA (로봇 프로세스 자동화)</span></li>
+    </ol>
+    <div class="key">
+      <p class="ans"><span class="lbl">정답</span><span class="b on">1</span><span>AI-Agent</span></p>
+      <p class="exp"><span class="lbl">풀이</span>울산EV공장-E-FOREST센터 협업으로 AI-Agent를 구현하였으며, Voice Chat 음성 소통을 통해 SCADA·FBI·GRIMS·MES 등 사내시스템과 연계된 데이터 분석을 수행한다.</p>
+    </div>
+  </article>
+
+  <article class="q" id="ko-q3" data-q="3">
+    <h2><span class="qn">Q3</span><span class="qt">울산 EV 혁신기술 발표에서 "인력 의존 및 작업 한계"라는 변화의 이유(WHY)에 대응하기 위해 제시된 해결 방향(HOW)은?</span></h2>
+    <ol class="opts">
+      <li><span class="b">1</span><span>품질 자동화</span></li>
+      <li class="on"><span class="b on">2</span><span>조립 자동화<span class="sr"> (정답)</span></span></li>
+      <li><span class="b">3</span><span>물류 자동화</span></li>
+      <li><span class="b">4</span><span>데이터 통합</span></li>
+    </ol>
+    <div class="key">
+      <p class="ans"><span class="lbl">정답</span><span class="b on">2</span><span>조립 자동화</span></p>
+      <p class="exp"><span class="lbl">풀이</span>"고난도·반복 작업 부담 지속"이라는 문제(WHY)에 대해 "고난도 반복 작업 최대 자동화 → 고생산성·작업부담 저감"을 지향하는 조립 자동화(HOW)로 대응한다고 제시하였다.</p>
+    </div>
+  </article>
+
+  <article class="q" id="ko-q4" data-q="4">
+    <h2><span class="qn">Q4</span><span class="qt">상온발포충진재 자동화 적용으로 얻은 효과로 소개된 것은?</span></h2>
+    <ol class="opts">
+      <li class="on"><span class="b on">1</span><span>후석 소음 2~3dB 절감<span class="sr"> (정답)</span></span></li>
+      <li><span class="b">2</span><span>생산속도 2배 향상</span></li>
+      <li><span class="b">3</span><span>중량 10% 경량화</span></li>
+      <li><span class="b">4</span><span>도장불량률 50% 감소</span></li>
+    </ol>
+    <div class="key">
+      <p class="ans"><span class="lbl">정답</span><span class="b on">1</span><span>후석 소음 2~3dB 절감</span></p>
+      <p class="exp"><span class="lbl">풀이</span>100% 자동화 도포와 전수 검사 체계를 통해 후석 소음을 2~3dB 절감하여 차량 NVH(소음·진동) 성능을 향상시켰다.</p>
+    </div>
+  </article>
+
+  <article class="q" id="ko-q5" data-q="5">
+    <h2><span class="qn">Q5</span><span class="qt">울산 EV 혁신기술 발표가 궁극적으로 지향하는 공장의 모습으로 제시된 것은?</span></h2>
+    <ol class="opts">
+      <li><span class="b">1</span><span>사람의 개입을 완전히 없애는 공장</span></li>
+      <li class="on"><span class="b on">2</span><span>기술과 사람이 융합되어 유연 생산과 최고 품질을 동시에 추구하는 지속가능한 공장<span class="sr"> (정답)</span></span></li>
+      <li><span class="b">3</span><span>생산효율만 최우선으로 하는 공장</span></li>
+      <li><span class="b">4</span><span>다른 공장과 동일한 운영방식만 따르는 공장</span></li>
+    </ol>
+    <div class="key">
+      <p class="ans"><span class="lbl">정답</span><span class="b on">2</span><span>기술·사람 융합 + 유연생산 + 최고품질의 지속가능 공장</span></p>
+      <p class="exp"><span class="lbl">풀이</span>"기술과 사람이 융합된 제조환경", "효율적&amp;지속가능 공장", "유연 생산 공장", "최고 품질과 안정성 확보"를 혁신기술이 지향하는 방향으로 제시하였다.</p>
+    </div>
+  </article>
+
+  <article class="q" id="ko-q6" data-q="6">
+    <h2><span class="qn">Q6</span><span class="qt">현대자동차그룹이 자체 개발 중인 E2E 기반 자율주행 AI의 이름은?</span></h2>
+    <ol class="opts">
+      <li><span class="b">1</span><span>Dojo</span></li>
+      <li><span class="b">2</span><span>Mpilot</span></li>
+      <li class="on"><span class="b on">3</span><span>Atria AI<span class="sr"> (정답)</span></span></li>
+      <li><span class="b">4</span><span>SuperVision</span></li>
+    </ol>
+    <div class="key">
+      <p class="ans"><span class="lbl">정답</span><span class="b on">3</span><span>Atria AI</span></p>
+      <p class="exp"><span class="lbl">풀이</span>Atria AI는 HMG가 자체 개발 중인 E2E 기반 자율주행 AI이다. Dojo는 Tesla, Mpilot은 Momenta, SuperVision은 Mobileye가 각각 사용하는 자율주행 관련 명칭으로, 이 발표에서 소개된 HMG 고유 기술명이 아니다.</p>
+    </div>
+  </article>
+
+  <article class="q" id="ko-q7" data-q="7">
+    <h2><span class="qn">Q7</span><span class="qt">Data Flywheel을 조기에 가동하기 위해 추진 중인 'Two Track 전략'의 두 축으로 제시된 것은?</span></h2>
+    <ol class="opts">
+      <li class="on"><span class="b on">1</span><span>내재화 자율주행 모델 고도화 + 엔비디아와의 글로벌 파트너십<span class="sr"> (정답)</span></span></li>
+      <li><span class="b">2</span><span>표준화된 센서 체계 구축 + 데이터 연합(Data Union) 구축</span></li>
+      <li><span class="b">3</span><span>글로벌 양산 역량 확보 + 표준화된 센서 체계 구축</span></li>
+      <li><span class="b">4</span><span>데이터 연합(Data Union) 구축 + 글로벌 양산 역량 확보</span></li>
+    </ol>
+    <div class="key">
+      <p class="ans"><span class="lbl">정답</span><span class="b on">1</span><span>내재화 모델 고도화 + 엔비디아 글로벌 파트너십</span></p>
+      <p class="exp"><span class="lbl">풀이</span>Two Track 전략은 내재화 자율주행 모델(Atria AI) 고도화와 엔비디아와의 글로벌 파트너십이다. ②~④는 모두 발표에 등장하는 "데이터 플라이휠 핵심 기반 구축 3요소"(센서표준화·Data Union·글로벌 양산역량)의 조합으로, Two Track 전략과는 별개의 개념이다.</p>
+    </div>
+  </article>
+
+  <article class="q" id="ko-q8" data-q="8">
+    <h2><span class="qn">Q8</span><span class="qt">무인이송 차량과 관제서버 간 통신 안정성·보안 확보를 위해 최종적으로 채택된 무선통신 방식은?</span></h2>
+    <ol class="opts">
+      <li><span class="b">1</span><span>차량 내장 Wi-Fi</span></li>
+      <li><span class="b">2</span><span>통신사 LTE</span></li>
+      <li class="on"><span class="b on">3</span><span>Private 5G<span class="sr"> (정답)</span></span></li>
+      <li><span class="b">4</span><span>위성통신</span></li>
+    </ol>
+    <div class="key">
+      <p class="ans"><span class="lbl">정답</span><span class="b on">3</span><span>Private 5G</span></p>
+      <p class="exp"><span class="lbl">풀이</span>Wi-Fi는 다수 차량 접속 시 연결품질이 저하되고, LTE는 통신사 망 경유로 지연·보안 이슈가 있어 최종적으로 사내망 기반 Private 5G가 채택되었다.</p>
+    </div>
+  </article>
+
+  <article class="q" id="ko-q9" data-q="9">
+    <h2><span class="qn">Q9</span><span class="qt">무인이송 발표의 맺음말에서 "위대한 일은 혼자 할 수 없다"는 Steve Jobs의 말을 인용하며 강조한 성공의 핵심 조건은?</span></h2>
+    <ol class="opts">
+      <li><span class="b">1</span><span>최고 수준의 기술 하나만 확보하면 충분하다</span></li>
+      <li class="on"><span class="b on">2</span><span>여러 조직이 하나의 목표로 유기적으로 협력하는 것<span class="sr"> (정답)</span></span></li>
+      <li><span class="b">3</span><span>신기술 개발을 전담 조직에 전적으로 위임하는 것</span></li>
+      <li><span class="b">4</span><span>현장 운영 조직이 주도적으로 모든 의사결정을 내리는 것</span></li>
+    </ol>
+    <div class="key">
+      <p class="ans"><span class="lbl">정답</span><span class="b on">2</span><span>여러 조직이 하나의 목표로 유기적으로 협력하는 것</span></p>
+      <p class="exp"><span class="lbl">풀이</span>"신기술 개발 조직, 현업에 적용하는 조직, 현장 운영하는 조직이 하나의 목표로 유기적으로 협력하여 양산 적용 성과로" 이어가야 한다는 메시지로 발표를 마무리하였다.</p>
+    </div>
+  </article>
+
+  <article class="q" id="ko-q10" data-q="10">
+    <h2><span class="qn">Q10</span><span class="qt">Global CMO가 지향하는 조직운영 철학을 가장 잘 나타낸 표현은?</span></h2>
+    <ol class="opts">
+      <li class="on"><span class="b on">1</span><span>Beyond Silos to Synergy<span class="sr"> (정답)</span></span></li>
+      <li><span class="b">2</span><span>Winner Takes All</span></li>
+      <li><span class="b">3</span><span>Speed Over Quality</span></li>
+      <li><span class="b">4</span><span>Local First, Global Later</span></li>
+    </ol>
+    <div class="key">
+      <p class="ans"><span class="lbl">정답</span><span class="b on">1</span><span>Beyond Silos to Synergy</span></p>
+      <p class="exp"><span class="lbl">풀이</span>맺음말에서 "조직 간 사일로(Silo)를 넘어 시너지로 나아가는 것"을 Global-CMO의 지향점으로 제시하며 "Beyond Silos to Synergy"를 슬로건으로 소개하였다.</p>
+    </div>
+  </article>
+</section>
+
+<section id="panel-en" lang="en">
+  <h1>2026 Global Manufacturing Innovation Seminar Quiz Answers</h1>
+
+  <nav class="glance" aria-labelledby="glance-en">
+    <h2 id="glance-en">Answers at a glance</h2>
+    <ol>
+      <li><a href="#en-q1">Q1<span class="b on">2</span></a></li>
+      <li><a href="#en-q2">Q2<span class="b on">1</span></a></li>
+      <li><a href="#en-q3">Q3<span class="b on">2</span></a></li>
+      <li><a href="#en-q4">Q4<span class="b on">1</span></a></li>
+      <li><a href="#en-q5">Q5<span class="b on">2</span></a></li>
+      <li><a href="#en-q6">Q6<span class="b on">3</span></a></li>
+      <li><a href="#en-q7">Q7<span class="b on">1</span></a></li>
+      <li><a href="#en-q8">Q8<span class="b on">3</span></a></li>
+      <li><a href="#en-q9">Q9<span class="b on">2</span></a></li>
+      <li><a href="#en-q10">Q10<span class="b on">1</span></a></li>
+    </ol>
+  </nav>
+
+  <article class="q" id="en-q1" data-q="1">
+    <h2><span class="qn">Q1</span><span class="qt">What are the three manufacturing innovation concepts pursued by the Ulsan EV Plant?</span></h2>
+    <ol class="opts">
+      <li><span class="b">1</span><span>Speed, Safety, Smart</span></li>
+      <li class="on"><span class="b on">2</span><span>Human, Space, Data<span class="sr"> (correct)</span></span></li>
+      <li><span class="b">3</span><span>Green, Clean, Lean</span></li>
+      <li><span class="b">4</span><span>People, Process, Technology</span></li>
+    </ol>
+    <div class="key">
+      <p class="ans"><span class="lbl">Answer</span><span class="b on">2</span><span>Human, Space, Data</span></p>
+      <p class="exp"><span class="lbl">Explanation</span>The three core concepts were presented as a plant that "puts people at the center (Human), coexists with nature (Space), and is connected through data (Data)."</p>
+    </div>
+  </article>
+
+  <article class="q" id="en-q2" data-q="2">
+    <h2><span class="qn">Q2</span><span class="qt">What is the AI-based plant operation system at the SDF Lounge, implemented jointly by the Ulsan EV Plant and the E-FOREST Center?</span></h2>
+    <ol class="opts">
+      <li class="on"><span class="b on">1</span><span>AI-Agent<span class="sr"> (correct)</span></span></li>
+      <li><span class="b">2</span><span>Smart Co-Pilot</span></li>
+      <li><span class="b">3</span><span>Digital Twin</span></li>
+      <li><span class="b">4</span><span>RPA (Robotic Process Automation)</span></li>
+    </ol>
+    <div class="key">
+      <p class="ans"><span class="lbl">Answer</span><span class="b on">1</span><span>AI-Agent</span></p>
+      <p class="exp"><span class="lbl">Explanation</span>The Ulsan EV Plant and the E-FOREST Center collaborated to implement the AI-Agent. It communicates by voice through Voice Chat and performs data analysis linked to in-house systems such as SCADA, FBI, GRIMS, and MES.</p>
+    </div>
+  </article>
+
+  <article class="q" id="en-q3" data-q="3">
+    <h2><span class="qn">Q3</span><span class="qt">In the presentation on innovative technologies at the Ulsan EV Plant, which approach (HOW) was proposed to address "manpower dependence and work limitations" as a reason for change (WHY)?</span></h2>
+    <ol class="opts">
+      <li><span class="b">1</span><span>Quality automation</span></li>
+      <li class="on"><span class="b on">2</span><span>Assembly automation<span class="sr"> (correct)</span></span></li>
+      <li><span class="b">3</span><span>Logistics automation</span></li>
+      <li><span class="b">4</span><span>Data integration</span></li>
+    </ol>
+    <div class="key">
+      <p class="ans"><span class="lbl">Answer</span><span class="b on">2</span><span>Assembly automation</span></p>
+      <p class="exp"><span class="lbl">Explanation</span>Under this reason for change (WHY), the problem was described as a "continuing burden of high-difficulty, repetitive work." The proposed approach (HOW) was assembly automation, aiming for "maximum automation of high-difficulty, repetitive work → high productivity and reduced work burden."</p>
+    </div>
+  </article>
+
+  <article class="q" id="en-q4" data-q="4">
+    <h2><span class="qn">Q4</span><span class="qt">What benefit was presented as a result of automating the room-temperature expanding foam filler process?</span></h2>
+    <ol class="opts">
+      <li class="on"><span class="b on">1</span><span>Reduced rear-seat noise by 2–3 dB<span class="sr"> (correct)</span></span></li>
+      <li><span class="b">2</span><span>Doubled production speed</span></li>
+      <li><span class="b">3</span><span>Reduced weight by 10%</span></li>
+      <li><span class="b">4</span><span>Reduced paint defect rate by 50%</span></li>
+    </ol>
+    <div class="key">
+      <p class="ans"><span class="lbl">Answer</span><span class="b on">1</span><span>Reduced rear-seat noise by 2–3 dB</span></p>
+      <p class="exp"><span class="lbl">Explanation</span>With 100% automated application and a system that inspects every unit, rear-seat noise was reduced by 2–3 dB. This improved the vehicle's NVH (noise, vibration, and harshness) performance.</p>
+    </div>
+  </article>
+
+  <article class="q" id="en-q5" data-q="5">
+    <h2><span class="qn">Q5</span><span class="qt">In the presentation on innovative technologies at the Ulsan EV Plant, what was described as the ultimate vision for the plant?</span></h2>
+    <ol class="opts">
+      <li><span class="b">1</span><span>A plant that eliminates human involvement entirely</span></li>
+      <li class="on"><span class="b on">2</span><span>A sustainable plant where technology and people are integrated to pursue both flexible production and the highest quality<span class="sr"> (correct)</span></span></li>
+      <li><span class="b">3</span><span>A plant that prioritizes production efficiency above all else</span></li>
+      <li><span class="b">4</span><span>A plant that simply follows the same operating methods as other plants</span></li>
+    </ol>
+    <div class="key">
+      <p class="ans"><span class="lbl">Answer</span><span class="b on">2</span><span>A sustainable plant where technology and people are integrated to pursue both flexible production and the highest quality</span></p>
+      <p class="exp"><span class="lbl">Explanation</span>The presentation set out the direction its innovative technologies aim for: "a manufacturing environment where technology and people are integrated," "an efficient &amp; sustainable plant," "a flexible production plant," and "securing the highest quality and stability."</p>
+    </div>
+  </article>
+
+  <article class="q" id="en-q6" data-q="6">
+    <h2><span class="qn">Q6</span><span class="qt">What is the name of the end-to-end (E2E) autonomous driving AI that Hyundai Motor Group is developing in-house?</span></h2>
+    <ol class="opts">
+      <li><span class="b">1</span><span>Dojo</span></li>
+      <li><span class="b">2</span><span>Mpilot</span></li>
+      <li class="on"><span class="b on">3</span><span>Atria AI<span class="sr"> (correct)</span></span></li>
+      <li><span class="b">4</span><span>SuperVision</span></li>
+    </ol>
+    <div class="key">
+      <p class="ans"><span class="lbl">Answer</span><span class="b on">3</span><span>Atria AI</span></p>
+      <p class="exp"><span class="lbl">Explanation</span>Atria AI is the E2E-based autonomous driving AI that Hyundai Motor Group (HMG) is developing in-house. Dojo, Mpilot, and SuperVision are autonomous-driving-related names used by Tesla, Momenta, and Mobileye, respectively. They are not HMG's own technology names introduced in this presentation.</p>
+    </div>
+  </article>
+
+  <article class="q" id="en-q7" data-q="7">
+    <h2><span class="qn">Q7</span><span class="qt">What were presented as the two pillars of the 'Two-Track Strategy' being pursued to get the Data Flywheel up and running early?</span></h2>
+    <ol class="opts">
+      <li class="on"><span class="b on">1</span><span>Advancing the in-house autonomous driving model + a global partnership with NVIDIA<span class="sr"> (correct)</span></span></li>
+      <li><span class="b">2</span><span>Building a standardized sensor system + building a Data Union</span></li>
+      <li><span class="b">3</span><span>Securing global mass-production capability + building a standardized sensor system</span></li>
+      <li><span class="b">4</span><span>Building a Data Union + securing global mass-production capability</span></li>
+    </ol>
+    <div class="key">
+      <p class="ans"><span class="lbl">Answer</span><span class="b on">1</span><span>Advancing the in-house autonomous driving model + a global partnership with NVIDIA</span></p>
+      <p class="exp"><span class="lbl">Explanation</span>The Two-Track Strategy consists of advancing the in-house autonomous driving model (Atria AI) and a global partnership with NVIDIA. Options ②–④ are all combinations of the "three key elements for building the Data Flywheel's core foundation" (sensor standardization, Data Union, and global mass-production capability) that also appear in the presentation. These are a separate concept from the Two-Track Strategy.</p>
+    </div>
+  </article>
+
+  <article class="q" id="en-q8" data-q="8">
+    <h2><span class="qn">Q8</span><span class="qt">Which wireless communication method was ultimately adopted to ensure stable and secure communication between the vehicles and the control server during driverless transport?</span></h2>
+    <ol class="opts">
+      <li><span class="b">1</span><span>Built-in vehicle Wi-Fi</span></li>
+      <li><span class="b">2</span><span>Commercial carrier LTE</span></li>
+      <li class="on"><span class="b on">3</span><span>Private 5G<span class="sr"> (correct)</span></span></li>
+      <li><span class="b">4</span><span>Satellite communication</span></li>
+    </ol>
+    <div class="key">
+      <p class="ans"><span class="lbl">Answer</span><span class="b on">3</span><span>Private 5G</span></p>
+      <p class="exp"><span class="lbl">Explanation</span>Wi-Fi's connection quality degrades when many vehicles connect at once, and LTE passes through the carrier's network, which raises latency and security issues. As a result, Private 5G based on the in-house network was ultimately adopted.</p>
+    </div>
+  </article>
+
+  <article class="q" id="en-q9" data-q="9">
+    <h2><span class="qn">Q9</span><span class="qt">In the closing remarks of the driverless transport presentation, the speaker quoted Steve Jobs: "Great things in business are never done by one person." What did the speaker emphasize as the key to success?</span></h2>
+    <ol class="opts">
+      <li><span class="b">1</span><span>Securing just one best-in-class technology is enough</span></li>
+      <li class="on"><span class="b on">2</span><span>Multiple organizations working together seamlessly toward one shared goal<span class="sr"> (correct)</span></span></li>
+      <li><span class="b">3</span><span>Fully delegating new technology development to a dedicated organization</span></li>
+      <li><span class="b">4</span><span>Having the on-site operations organization make all decisions on its own</span></li>
+    </ol>
+    <div class="key">
+      <p class="ans"><span class="lbl">Answer</span><span class="b on">2</span><span>Multiple organizations working together seamlessly toward one shared goal</span></p>
+      <p class="exp"><span class="lbl">Explanation</span>The presentation closed with the message that "the organization developing new technology, the organization applying it to actual work, and the organization running on-site operations must work together seamlessly toward one goal" to turn it into results in mass production.</p>
+    </div>
+  </article>
+
+  <article class="q" id="en-q10" data-q="10">
+    <h2><span class="qn">Q10</span><span class="qt">Which phrase best represents the organizational philosophy that Global CMO pursues?</span></h2>
+    <ol class="opts">
+      <li class="on"><span class="b on">1</span><span>Beyond Silos to Synergy<span class="sr"> (correct)</span></span></li>
+      <li><span class="b">2</span><span>Winner Takes All</span></li>
+      <li><span class="b">3</span><span>Speed Over Quality</span></li>
+      <li><span class="b">4</span><span>Local First, Global Later</span></li>
+    </ol>
+    <div class="key">
+      <p class="ans"><span class="lbl">Answer</span><span class="b on">1</span><span>Beyond Silos to Synergy</span></p>
+      <p class="exp"><span class="lbl">Explanation</span>In the closing remarks, "moving beyond silos between organizations toward synergy" was presented as what Global CMO aims for, and "Beyond Silos to Synergy" was introduced as its slogan.</p>
+    </div>
+  </article>
+</section>
+
+</main>
+
+<a class="top" href="#top" aria-label="맨 위로">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5.5 11.5 12 5l6.5 6.5"/></svg>
+</a>
+
+<script>
+// Optional polish only. The language tabs, question links and back-to-top link
+// all work without this script, since some file previewers block scripts.
+(function () {
+  var root = document.documentElement;
+  var bar = document.querySelector('.bar');
+  var topLink = document.querySelector('.top');
+  var radio = { ko: document.getElementById('lang-ko'), en: document.getElementById('lang-en') };
+  var panel = { ko: document.getElementById('panel-ko'), en: document.getElementById('panel-en') };
+  var title = {
+    ko: '2026 글로벌제조혁신세미나 퀴즈 정답',
+    en: '2026 Global Manufacturing Innovation Seminar Quiz Answers'
+  };
+  var KEY = 'gmis-quiz-lang';
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function langNow() { return radio.en.checked ? 'en' : 'ko'; }
+  var shown = langNow();  // language whose panel is on screen
+  var spot = null;        // reading position captured just before a switch
+
+  function measure() { root.style.setProperty('--bar-h', bar.offsetHeight + 'px'); }
+
+  // The question being read: the last one whose top has scrolled up under the tab bar.
+  function readingSpot() {
+    var line = bar.getBoundingClientRect().bottom + 16;
+    var qs = panel[shown].querySelectorAll('.q');
+    var hit = null;
+    for (var i = 0; i < qs.length; i++) {
+      if (qs[i].getBoundingClientRect().top <= line) hit = qs[i]; else break;
+    }
+    return hit ? { n: hit.getAttribute('data-q'), top: hit.getBoundingClientRect().top } : null;
+  }
+
+  function sync(keepPlace) {
+    var lang = langNow();
+    var s = keepPlace && lang !== shown ? spot : null;
+    shown = lang;
+    spot = null;
+    root.lang = lang;
+    document.title = title[lang];
+    topLink.setAttribute('aria-label', lang === 'ko' ? '맨 위로' : 'Back to top');
+    // Switching language keeps the same question in view.
+    if (s) {
+      var same = panel[lang].querySelector('.q[data-q="' + s.n + '"]');
+      if (same) window.scrollTo(0, window.pageYOffset + same.getBoundingClientRect().top - s.top);
+    }
+    try { localStorage.setItem(KEY, lang); } catch (e) {}
+  }
+
+  ['ko', 'en'].forEach(function (k) {
+    radio[k].addEventListener('change', function () { sync(true); });
+    // arrow keys switch the radios directly, so note the place first
+    radio[k].addEventListener('keydown', function () { spot = readingSpot(); });
+  });
+  var labels = document.querySelectorAll('.tab');
+  for (var i = 0; i < labels.length; i++) {
+    // a label click runs before its radio changes, while the old panel is still on screen
+    labels[i].addEventListener('click', function () { spot = readingSpot(); });
+  }
+
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('.glance a');
+    if (!a) return;
+    var target = document.getElementById(a.getAttribute('href').slice(1));
+    if (!target) return;
+    e.preventDefault();
+    target.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
+  });
+
+  topLink.addEventListener('click', function (e) {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' });
+  });
+
+  var ticking = false;
+  function onScroll() {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(function () {
+      var y = window.pageYOffset;
+      if (y > 4) bar.setAttribute('data-scrolled', ''); else bar.removeAttribute('data-scrolled');
+      if (y > 600) topLink.setAttribute('data-show', ''); else topLink.removeAttribute('data-show');
+      ticking = false;
+    });
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', measure);
+
+  var want = null;
+  var hash = (location.hash || '').toLowerCase();
+  if (hash === '#en' || hash === '#ko') want = hash.slice(1);
+  else { try { want = localStorage.getItem(KEY); } catch (e) {} }
+  if (want === 'en' || want === 'ko') radio[want].checked = true;
+  shown = langNow();
+  sync(false);
+  measure();
+  onScroll();
+})();
+</script>
+</body>
+</html>
